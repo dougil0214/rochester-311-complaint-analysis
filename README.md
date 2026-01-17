@@ -30,3 +30,22 @@ This project analyzes Rochester’s 311 service request data to identify where c
 ---
 
 ## Structure
+- data/ raw and cleaned datasets
+- sql/ analysis queries
+- visuals/ dashboard screenshots and link
+- docs/ project brief and notes
+
+---
+
+## Key Questions
+- Which areas generate the most 311 complaints?
+- What issues are most common across the city?
+- How do complaint patterns differ by area?
+- Are there trends or seasonal patterns over time?
+
+---
+
+## Status
+Core analysis and dashboard complete.  
+Future work may include response time and status analysis.
+
