@@ -41,7 +41,9 @@ This project analyzes Rochester’s 311 service request data to identify where c
 - Which areas generate the most 311 complaints?
 - What issues are most common across the city?
 - How do complaint patterns differ by area?
+- How long do complaints take to be resolved
 - Are there trends or seasonal patterns over time?
+
 
 ---
 
