@@ -1,0 +1,47 @@
+# 311 Data Audit – Initial Review
+
+## Dataset Overview
+- Source: City of Rochester Open Data – 311 Complaints
+- Format: CSV
+- Time range: 2020-2021
+- Number of rows: 55,597 rows
+- Number of columns: 8
+
+## Columns Present
+List the key columns observed:
+- Subject 
+- Reason
+- Type
+- Department
+- Bureau
+- Request Dare
+- Street Name
+- Zip
+
+## Data Quality Observations
+
+### Missing Values
+- Department: Many NULL values
+- Bureau: Many NULL values
+- ZIP Code: Frequently blank
+- Street Name: Mostly populated
+
+### Consistency Issues
+- Some street name appear with word "AND" then name another street 
+- Records lack location detail beyond street name
+- Some zipcodes come up on street names but not all 
+
+## What This Means
+- Department and Bureau cannot be reliably used for primary analysis
+- Street-level analysis is the most viable starting point
+- ZIP code analysis is limited due to missing data
+
+## Decisions Made
+- Focus analysis on street-level complaint patterns
+- Treat missing Department/Bureau as "Unknown"
+- Exclude ZIP-based analysis for initial phase
+
+## Next Steps
+- Load data into SQL database
+- Run aggregation queries by street
+- Identify top complaint locations
