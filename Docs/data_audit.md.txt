@@ -24,6 +24,7 @@ List the key columns observed:
 - Department: Many NULL values
 - Bureau: Many NULL values
 - ZIP Code: Frequently blank
+- ZIP code values are stored as empty strings rather than NULL; missing ZIPs identified using zip_code = '' in SQL query.
 - Street Name: Mostly populated
 
 ### Consistency Issues

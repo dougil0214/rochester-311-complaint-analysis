@@ -19,4 +19,12 @@ SELECT
     SUM(ZIP IS NULL) AS zip_nulls
 FROM 311_data_audit;
 
+-- Zips that are blank
+SELECT
+  SUM(zip IS NULL) AS null_zips,
+  SUM(zip = '') AS blank_zips
+FROM 311_data_audit;
+
+
+
 
