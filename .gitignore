@@ -1,0 +1,8 @@
+# ArcGIS temporary files
+*.lock
+ArcGIS/**/.backups/
+ArcGIS/**/GpMessages/
+ArcGIS/**/ImportLog/
+ArcGIS/**/Index/
+ArcGIS/**/RasterFunctionTemplates/
+ArcGIS/Rochester_311_Analysis/Rochester_311_Analysis.atbx
